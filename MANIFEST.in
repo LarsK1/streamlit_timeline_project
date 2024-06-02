@@ -1,1 +1,1 @@
-recursive-include streamlit-blumagine-components/frontend/dist/apps *
+recursive-include streamlit_timeline/frontend/build *

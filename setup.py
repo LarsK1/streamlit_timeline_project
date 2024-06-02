@@ -6,11 +6,11 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="streamlit-blumagine-components",
-    version="0.0.1",
-    author="Sarathkumar",
-    author_email="sarathkumar.chandrasekar@toptal.com",
-    description="Streamlit component that allows you to include custom components in blumagine",
+    name="streamlit-timeline",
+    version="0.0.3",
+    author="Lars Kusch",
+    author_email="info@blumagine.de",
+    description="Streamlit component that displays a timeline using react-chrono",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",

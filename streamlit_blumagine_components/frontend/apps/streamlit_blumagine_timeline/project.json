@@ -1,9 +1,0 @@
-{
-  "name": "streamlit_blumagine_timeline",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/streamlit_blumagine_timeline/src",
-  "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project streamlit_blumagine_timeline --web",
-  "targets": {}
-}
