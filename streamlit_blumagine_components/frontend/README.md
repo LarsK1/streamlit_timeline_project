@@ -12,11 +12,11 @@ comes with a LSP for Vim users.
 
 ## Start the application
 
-Run `npx nx serve streamlit-blumagine-components` to start the development server. Happy coding!
+Run `npx nx serve streamlit_blumagine_components` to start the development server. Happy coding!
 
 ## Build for production
 
-Run `npx nx build streamlit-blumagine-components` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
+Run `npx nx build streamlit_blumagine_components` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
 
 ## Running tasks
 

@@ -5,7 +5,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/streamlit-blumagine-timeline',
+  cacheDir: '../../node_modules/.vite/apps/streamlit_blumagine_timeline',
 
   server: {
     port: 4200,
@@ -25,7 +25,7 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: '../../dist/apps/streamlit-blumagine-timeline',
+    outDir: '../../dist/apps/streamlit_blumagine_timeline',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {

@@ -2,7 +2,7 @@ import streamlit.components.v1 as components
 import os
 
 root_dir = os.path.dirname(os.path.abspath(__file__))
-timeline_dir = os.path.join(root_dir, 'frontend', 'dist', 'apps', 'streamlit-blumagine-timeline')
+timeline_dir = os.path.join(root_dir, 'frontend', 'dist', 'apps', 'streamlit_blumagine_timeline')
 
 _timeline_component = components.declare_component(
     "timeline_component",
