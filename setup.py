@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="streamlit-timeline",
-    version="0.0.3",
+    version="0.0.10",
     author="Lars Kusch",
     author_email="info@blumagine.de",
     description="Streamlit component that displays a timeline using react-chrono",

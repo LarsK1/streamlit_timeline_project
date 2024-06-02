@@ -19,7 +19,7 @@ class StreamlitTimeline extends StreamlitComponentBase<State> {
 
   public render = (): ReactNode => {
     const items = this.props.args["items"];
-	const titleDateFormat = "DD.MM YYYY";
+	const titleDateFormat = "DD.MM.YYYY";
 
     // Streamlit sends us a theme object via props that we can use to ensure
     // that our component has visuals that match the active theme in a
@@ -32,11 +32,13 @@ class StreamlitTimeline extends StreamlitComponentBase<State> {
 	if (items && items.length > 0 && theme) {
         return (
               <div>
-              <Chrono items={items} mode="VERTICAL" disableToolbar={true} titleDateFormat={titleDateFormat} enableOutline cardHeight={30} theme={{
-    primary: theme.primaryColor,
+              <Chrono items={items} mode="VERTICAL" disableToolbar={true} titleDateFormat={titleDateFormat} enableOutline cardHeight={50} theme={{
+    primary: 'grey',
+	secondary: theme.primaryColor,
     cardBgColor: theme.backgroundColor,
     titleColor: theme.textColor,
-    titleColorActive: 'red',
+    titleColorActive: 'white',
+	cardTitleColor: '#31333F',
   }}/></div>
           );
 

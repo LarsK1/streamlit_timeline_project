@@ -2,6 +2,9 @@
 
 # compiled output
 tmp
+build
+dist
+streamlit_timeline.egg-info
 /out-tsc
 
 # dependencies
@@ -39,3 +42,6 @@ testem.log
 Thumbs.db
 
 **/.nx/cache
+
+streamlit_timeline\frontend\build
+streamlit_timeline\frontend\node_modules
