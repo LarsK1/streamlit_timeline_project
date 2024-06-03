@@ -2,9 +2,10 @@ import {
   Streamlit,
   StreamlitComponentBase,
   withStreamlitConnection,
-} from "streamlit-component-lib"
-import React, { ReactNode } from "react"
+} from "streamlit-component-lib";
+import React, { ReactNode } from "react";
 import {Chrono} from "react-chrono";
+import './timeline.css';
 
 interface State {
   isFocused: boolean
@@ -29,10 +30,15 @@ class StreamlitTimeline extends StreamlitComponentBase<State> {
     // When the button is clicked, we'll increment our "numClicks" state
     // variable, and send its new value back to Streamlit, where it'll
     // be available to the Python program.
+
+    const handleItemSelection = (value: any) => {
+      Streamlit.setComponentValue(value)
+    }
+
 	if (items && items.length > 0 && theme) {
         return (
-              <div>
-              <Chrono items={items} mode="VERTICAL" disableToolbar={true} titleDateFormat={titleDateFormat} enableOutline cardHeight={50} theme={{
+              <div className="streamlit-font">
+              <Chrono items={items} mode="VERTICAL" disableToolbar={true} titleDateFormat={titleDateFormat} enableOutline cardHeight={50} onItemSelected={handleItemSelection} theme={{
     primary: 'grey',
 	secondary: theme.primaryColor,
     cardBgColor: theme.backgroundColor,
